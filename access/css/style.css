@@ -1,13 +1,144 @@
 @charset "UTF-8";
-html{
+
+html {
     font-size: 16px;
     line-height: 1.6;
     color: #270407;
     font-family: 'Noto Sans JP', sans-serif;
 }
-a{
+
+img {
+    width: 200px;
+}
+
+a {
     display: block;
 }
-/* ヘッダー */
 
-/* ヘッダーナビ */
+/* ヘッダー */
+.logo {
+    width: 200px;
+    margin: 30px auto;
+}
+
+/* ハンバーガーメニュー */
+
+.menu {
+    position: fixed;
+    top: -1000px;
+    left: 50%;
+    z-index: 1;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(44, 5, 8) 100%);
+    transform: translateX(-50%);
+    transition: ease 0.7s;
+}
+
+.menu li {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 0.5em;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.menu li+li {
+    border-top: 1px solid #f1ecec;
+}
+
+.menu li a {
+    padding: 12px 60px;
+    display: block;
+}
+
+.menu li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    background-color: #fff;
+    transform: translateY(150%);
+    border-radius: 50%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.menu li span:nth-child(2) {
+    left: 25%;
+    transition-delay: 0.1S;
+}
+
+.menu li span:nth-child(3) {
+    left: 50%;
+    transition-delay: 0.2S;
+}
+
+.menu li span:nth-child(4) {
+    left: 75%;
+    transition-delay: 0.3S;
+}
+
+.btn-gnavi {
+    width: 42px;
+    height: 42px;
+    position: fixed;
+    top: 5px;
+    right: 13px;
+    z-index: 100;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn-gnavi span {
+    width: 30px;
+    border-bottom: solid 3px #270407;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    transition: all 400ms;
+}
+
+.btn-gnavi span:nth-child(1) {
+    top: 11px;
+}
+
+.btn-gnavi span:nth-child(2) {
+    top: 21px;
+}
+
+.btn-gnavi span:nth-child(3) {
+    top: 31px;
+}
+
+/* ボタンが押された時 (ハンバーガーメニュー)*/
+
+.menu.is-active {
+    top: 80px;
+}
+
+.btn-gnavi.is-active span:nth-of-type(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.btn-gnavi.is-active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.btn-gnavi.is-active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@media screen and (min-width: 900px) {}
