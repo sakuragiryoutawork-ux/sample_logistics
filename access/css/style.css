@@ -15,6 +15,16 @@ a {
     display: block;
 }
 
+section {
+    padding-bottom: 80px;
+}
+
+.inner {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 /* ヘッダー */
 .logo {
     width: 200px;
@@ -154,20 +164,39 @@ a {
     align-items: center;
 }
 
-.KV-body {
-    max-width: 1000px;
-    width: 90%;
-    /* margin: 0 auto; */
-}
-
-.KV-body p {
+.KV p {
     padding: 10px 20px;
     color: #fff;
     font-size: 28px;
     background-color: rgba(0, 0, 0, 0.8);
     display: inline-block;
+    letter-spacing: 0.1em;
 }
 
-.KV-body p+p {
+.KV p+p {
     margin-top: 20px;
+}
+
+/* 見出し */
+
+.heading {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.heading-body {
+    font-size: 30px;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #ed1c24;
+    letter-spacing: 0.2em;
+}
+
+/* ご挨拶 */
+
+.greeting p+p {
+    margin-top: 15px;
 }
