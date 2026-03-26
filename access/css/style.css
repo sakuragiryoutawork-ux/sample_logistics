@@ -8,7 +8,7 @@ html {
 }
 
 img {
-    width: 200px;
+    /* width: 200px; */
 }
 
 a {
@@ -199,4 +199,39 @@ section {
 
 .greeting p+p {
     margin-top: 15px;
+}
+
+/* 物流センター */
+.logistics_center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.logistics_center li a {
+    height: 100%;
+}
+
+.logistics_center-card {
+    height: 100%;
+    background: linear-gradient(30deg, rgba(0, 0, 0, 1) 0%, rgba(89, 14, 19, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logistics_center-card img {
+    width: 100%;
+}
+
+.logistics_center-card h3 {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.logistics_center-card p {
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
 }
