@@ -142,3 +142,32 @@ a {
 }
 
 @media screen and (min-width: 900px) {}
+
+
+/* KV */
+.KV {
+    background: url(../img/jacques-dillies-jcav1COVvOc-unsplash.jpg) center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.KV-body {
+    max-width: 1000px;
+    width: 90%;
+    /* margin: 0 auto; */
+}
+
+.KV-body p {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 28px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+}
+
+.KV-body p+p {
+    margin-top: 20px;
+}
