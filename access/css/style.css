@@ -7,10 +7,6 @@ html {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-img {
-    /* width: 200px; */
-}
-
 a {
     display: block;
 }
@@ -234,4 +230,79 @@ section {
     padding: 10px;
     font-size: 14px;
     color: #fff;
+}
+
+/* 採用情報 */
+.rec_info {
+    background: url(../img/akson-1K8pIbIrhkQ-unsplash.jpg) center no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+}
+
+.rec_info-btn {
+    margin: 120px 0 50px;
+    text-align: center;
+}
+
+.rec_info-btn a {
+    display: block;
+    width: 260px;
+    padding: 14px 40px;
+    margin: 0 auto;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rec_info-btn a::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    transform: rotate(45deg);
+}
+
+.rec_info-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rec_info-item {
+    width: 50%;
+}
+
+.rec_info-card {
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rec_info-card p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.rec_info-card.num1 {
+    background: url(../img/barthelemy-de-mazenod-Vh1WQ3i9RE0-unsplash.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.rec_info-card.num2 {
+    background: url(../img/campaign-creators-qCi_MzVODoU-unsplash.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.rec_info-card.num3 {
+    background: url(../img/linkedin-sales-solutions-nISqmehpBQk-unsplash.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.rec_info-card.num4 {
+    background: url(../img/disruptivo-iQ15DTx-63k-unsplash.jpg) center no-repeat;
+    background-size: cover;
 }
