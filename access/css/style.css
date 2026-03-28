@@ -48,7 +48,6 @@ section {
 .menu li {
     width: 100%;
     font-size: 18px;
-    border-radius: 0.5em;
     color: #fff;
     text-align: center;
     box-sizing: border-box;
@@ -147,8 +146,34 @@ section {
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-@media screen and (min-width: 900px) {}
 
+@media screen and (min-width: 768px) {
+    .btn-gnavi {
+        display: none;
+    }
+
+    .menu {
+        width: 100%;
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        transform: translateX(0);
+    }
+
+    .menu li:first-child {
+        border-left: 1px dotted #f1ecec;
+    }
+
+    .menu li {
+        width: auto;
+        border-right: 1px dotted #f1ecec;
+    }
+
+    .menu li+li {
+        border-top: none;
+    }
+}
 
 /* KV */
 .KV {
@@ -171,6 +196,19 @@ section {
 
 .KV p+p {
     margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .KV .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .KV p br {
+        display: none;
+    }
 }
 
 /* 見出し */
@@ -280,6 +318,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.7s;
 }
 
 .rec_info-card p {
@@ -307,6 +346,16 @@ section {
     background-size: cover;
 }
 
+.rec_info-card:hover {
+    filter: brightness(50%)
+}
+
+@media screen and (min-width: 768px) {
+    .rec_info-item {
+        width: 25%;
+    }
+}
+
 /* フッター */
 
 footer {
@@ -326,9 +375,12 @@ footer nav {
     padding: 10px 0 40px;
 }
 
+footer nav li {
+    border-bottom: 1px solid #000;
+}
+
 footer nav li a {
     padding: 10px 20px;
-    border-bottom: 1px solid #000;
 }
 
 .terms {
@@ -353,4 +405,20 @@ footer nav li a {
 
 .cpr small {
     color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    footer nav li {
+        display: inline-block;
+        border-bottom: none;
+        border-right: 1px dotted #000;
+    }
+
+    footer nav li:first-child {
+        border-left: 1px dotted #000;
+    }
+
+    footer nav li a {
+        padding: 0 20px;
+    }
 }
