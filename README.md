@@ -1,5 +1,4 @@
-# sample_logistics
-
+# Sample_Logistics(架空のコーポレートサイト)
 ## 概要
 
 Web制作学習サイト「Web鍛」のコーディング課題を使用した模写コーディング作品です。
